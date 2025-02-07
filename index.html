@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Busy Bee 🐝</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Main App -->
+  <div id="app" class="container">
+    <!-- Honey Counter -->
+    <div id="honeyCounter" class="honey-counter">🍯 Honey: <span id="honey">0</span></div>
+    
+    <!-- Mood Status Icon -->
+    <div id="mood" class="mood">😊</div>
+    
+    <!-- Bees -->
+    <div id="pet" class="pet pulse">🐝</div>
+    <div id="otherBee" class="pet pulse" style="display: none;">🐝</div>
+    
+    <!-- Flowers Container -->
+    <div id="flowers" class="flowers"></div>
+    
+    <!-- Status Bars -->
+    <div class="status">
+      <p>Hunger: <span id="hunger">100</span>%</p>
+      <p>Happiness: <span id="happiness">100</span>%</p>
+      <p>Pollen: <span id="pollen">0</span></p>
+    </div>
+    
+    <!-- Buttons -->
+    <div class="buttons">
+      <button onclick="makeHoney()">🍯 Make Honey</button>
+    </div>
+  </div>
+
+  <!-- Chat Button and Bubble -->
+  <div id="chatButton" class="chat-button">💬</div>
+  <div id="chatBubble" class="chat-bubble" style="display: none;">
+    <input type="text" id="chatInput" placeholder="Type a message..." />
+    <button onclick="sendMessage()">Send</button>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
